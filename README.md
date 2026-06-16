@@ -32,6 +32,7 @@ Everything runs **locally on your machine**. The only system the application tal
 - Connect to any Zabbix server with a URL and an API token. Multiple servers are supported.
 - Import hosts and host groups; automatic layout and topology discovery from your Zabbix data.
 - Guided **Wizard** for a map in five steps, or **Expert** mode for full manual control.
+- **Link-discovery template**: on first use, the app can create a Zabbix template that collects LLDP/CDP neighbours over SNMP (standard LLDP-MIB + CISCO-CDP-MIB), so topology links are discovered automatically.
 
 **A real editor**
 - Drag-and-drop nodes, multi-select (rubber-band and Ctrl/Shift-click), undo/redo, snap-to-grid.
@@ -58,7 +59,7 @@ Everything runs **locally on your machine**. The only system the application tal
 3. Follow the **Wizard**:
    1. **Connect**: enter your Zabbix URL (for example `https://zabbix.example.com`) and an **API token**.
    2. **Hosts**: choose the hosts and host groups to place on the map.
-   3. **Topology**: let the app draw the links, or add and edit them yourself.
+   3. **Topology**: let the app draw the links, or add and edit them yourself. On first run, the app offers to install a **link-discovery template** (LLDP/CDP over SNMP) in your Zabbix; assign it to the devices you want to map.
    4. **Style**: set link styles, icons, groups and labels.
    5. **Publish**: push the finished map to Zabbix, or export it as an image or PDF.
 
@@ -138,6 +139,7 @@ Tout fonctionne **en local sur votre poste**. Le seul système contacté est *vo
 - Connexion à n'importe quel serveur Zabbix via une URL et un jeton API. Plusieurs serveurs possibles.
 - Import des hosts et groupes de hosts ; mise en page automatique et découverte de topologie à partir de vos données Zabbix.
 - **Assistant** guidé pour une carte en cinq étapes, ou mode **Expert** pour un contrôle manuel complet.
+- **Template de découverte des liens** : au premier usage, l'application peut créer un template Zabbix qui collecte le voisinage LLDP/CDP en SNMP (OID standards LLDP-MIB + CISCO-CDP-MIB), pour découvrir automatiquement les liens de topologie.
 
 **Un véritable éditeur**
 - Glisser-déposer des nœuds, sélection multiple (rectangle élastique, Ctrl/Maj-clic), annuler/rétablir, aimantation à la grille.
@@ -162,7 +164,7 @@ Tout fonctionne **en local sur votre poste**. Le seul système contacté est *vo
 3. Suivez l'**Assistant** :
    1. **Connexion** : saisissez l'URL Zabbix (par exemple `https://zabbix.exemple.fr`) et un **jeton API**.
    2. **Hosts** : choisissez les hosts et groupes à placer sur la carte.
-   3. **Topologie** : laissez l'application tracer les liens, ou ajoutez-les et modifiez-les.
+   3. **Topologie** : laissez l'application tracer les liens, ou ajoutez-les et modifiez-les. Au premier lancement, l'application propose d'installer un **template de découverte des liens** (LLDP/CDP en SNMP) dans votre Zabbix ; assignez-le aux équipements à cartographier.
    4. **Style** : réglez styles de liens, icônes, groupes et étiquettes.
    5. **Publier** : envoyez la carte vers Zabbix, ou exportez-la en image ou PDF.
 
